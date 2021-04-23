@@ -12,6 +12,8 @@
   font-weight:normal;
   color:#555555;
   text-decoration:none;
+  float:right;
+  margin-left:20px;
 }
 .navigation-link.active {
   font-weight:bold;
