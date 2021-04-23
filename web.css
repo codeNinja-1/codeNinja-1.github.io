@@ -29,6 +29,28 @@
   font-size:48px;
   text-align:center;
 }
+.section {
+  margin-bottom:30px;
+}
+.margined {
+  margin-left:calc(50% - 300px);
+  margin-right:calc(50% - 300px);
+}
+.fade-in {
+  opacity:0;
+  animation:appear 1s forwards.
+}
+@keyframes fade-in {
+  0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 body {
   margin:0px;
   color:#555555;
