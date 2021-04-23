@@ -38,7 +38,7 @@
 }
 .fade-in {
   opacity:0;
-  animation:appear 1s forwards.
+  animation:fade-in 1s forwards.
 }
 @keyframes fade-in {
   0% {
