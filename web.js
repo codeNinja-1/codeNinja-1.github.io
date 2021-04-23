@@ -6,9 +6,18 @@ web.loadNavigationBar = function(navElement, section) {
     title.classList.add("title");
     title.textContent = "CodeNinja-1";
     navElement.appendChild(title);
-  var link1 = document.createElement("a");
-    link1.classList.add("navigation-link");
-    link1.textContent = "Projects";
-    link1.href = "/projects/";
-    navElement.appendChild(link1);
+  var links = {
+    "Projects":"/projects/",
+    "Coming Soon":"/coming-soon/"
+  };
+  for (var i = 0;i < Object.keys(links).length;i++) {
+    var link = document.createElement("a");
+    link.classList.add("navigation-link");
+    if (section === Object.keys(links)[i]) {
+      link.classList.add("active");
+    }
+    link.textContent = Object.keys(links)[i];
+    link.href = links[Object.keys(links)[i]];
+    navElement.appendChild(link);
+  }
 };
