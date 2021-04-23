@@ -2,9 +2,10 @@ var web = {};
 
 web.loadNavigationBar = function(navElement, section) {
   navElement.classList.add("navigation");
-  var title = document.createElement("span");
+  var title = document.createElement("a");
     title.classList.add("title");
     title.textContent = "CodeNinja-1";
+    title.href = "/";
     navElement.appendChild(title);
   var links = {
     "Projects":"/projects/",
