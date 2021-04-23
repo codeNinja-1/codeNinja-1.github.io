@@ -1,6 +1,7 @@
 var web = {};
 
 web.loadNavigationBar = function(navElement, section) {
+  navElement.classList.add("navigation");
   var title = document.createElement("span");
     title.classList.add("title");
     title.textContent = "CodeNinja-1";
