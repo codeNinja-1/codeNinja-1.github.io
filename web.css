@@ -1,0 +1,25 @@
+.navigation {
+  border-bottom:1px solid lightgray;
+  padding:8px;
+  color:#555555;
+}
+.title {
+  font-size:14px;
+  font-weight:bold;
+}
+.navigation-link {
+  font-size:14px;
+  font-weight:normal;
+  color:#555555;
+  text-decoration:none;
+}
+.navigation-link.active {
+  font-weight:bold;
+}
+.link {
+  color:#555555;
+  text-decoration:underline;
+}
+body {
+  margin:0px;
+}
