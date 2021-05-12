@@ -63,6 +63,6 @@ body {
 }
 .card:hover {
   border:1px solid #CCCCCC;
-  background:lightgray;
-  color:#CCCCCC;
+  background:#EEEEEE;
+  color:#333333;
 }
