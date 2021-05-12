@@ -62,7 +62,7 @@ body {
   font-size:14px;
 }
 .card:hover {
-  border:1px solid #CCCCCC;
+  border:1px solid #AAAAAA;
   background:#EEEEEE;
-  color:#333333;
+  color:#444444;
 }
