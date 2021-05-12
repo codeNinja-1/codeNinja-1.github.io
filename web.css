@@ -52,6 +52,7 @@ body {
   border-radius:3px;
   border:1px solid lightgray;
   min-height:300px;
+  cursor:pointer;
 }
 .card-header {
   font-size:22px;
@@ -59,4 +60,9 @@ body {
 }
 .card-body {
   font-size:14px;
+}
+.card:hover {
+  border:1px solid #CCCCCC;
+  background:lightgray;
+  color:#CCCCCC;
 }
