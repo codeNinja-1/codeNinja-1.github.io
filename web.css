@@ -46,3 +46,15 @@ body {
   font-size:14px;
   font-family:'Roboto', Arial, Sans-serif;
 }
+.card {
+  box-sizing:border-box;
+  padding:10px;
+  border-radius:5px;
+  border:1px solid lightgray;
+}
+.card-header {
+  font-size:18px;
+}
+.card-body {
+  font-size:14px;
+}
