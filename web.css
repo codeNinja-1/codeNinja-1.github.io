@@ -70,3 +70,15 @@ body {
   background:#EEEEEE;
   color:#444444;
 }
+.button {
+  box-sizing:border-box;
+  padding:8px 12px;
+  border-radius:3px;
+  color:white;
+  background:#1e90ff;
+  cursor:pointer;
+}
+.button.alt {
+  background:lightgray;
+  color:#555555;
+}
