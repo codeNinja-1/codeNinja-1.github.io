@@ -31,6 +31,7 @@ web.loadIcon = function() {
     image.src = "https://avatars.githubusercontent.com/u/74162951";
     image.onload = function() {
       var canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
         var context = canvas.getContext("2d");
           context.beginPath();
           context.beginPath();
