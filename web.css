@@ -87,3 +87,17 @@ body {
 .center {
   text-align:center;
 }
+.chip {
+  vertical-align:center;
+  background:lightgray;
+  color:#555555;
+  border-radius:8px;
+  height:16px;
+  font-size:12px;
+  padding:2px 4px;
+  box-sizing:border-box;
+}
+.collab {
+  background:#ff6611;
+  color:white;
+}
