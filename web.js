@@ -45,7 +45,7 @@ web.loadIcon = function() {
         link.setAttribute("rel", "icon");
         link.setAttribute("href", canvas.toDataURL());
         document.head.appendChild(link);
-      //document.body.removeChild(container);
+      document.body.removeChild(container);
     };
     container.appendChild(image);
 }
