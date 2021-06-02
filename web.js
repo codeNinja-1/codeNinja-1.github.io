@@ -28,7 +28,7 @@ web.loadIcon = function() {
     container.style.display = "none";
     document.body.appendChild(container);
   var image = document.createElement("img");
-    image.src = "https://avatars.githubusercontent.com/u/74162951";
+    image.src = "/favicon.png";
     image.onload = function() {
       var canvas = document.createElement("canvas");
         canvas.width = 32;
