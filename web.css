@@ -95,7 +95,9 @@ body {
   font-size:12px;
   padding:2px 6px;
   box-sizing:border-box;
-  margin:4px 0px;
+  margin:0px 4px;
+  vertical-align:top;
+  display:inline-block;
 }
 .collab {
   background:#ff6611;
