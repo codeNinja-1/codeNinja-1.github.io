@@ -33,21 +33,19 @@ web.loadIcon = function() {
       var canvas = document.createElement("canvas");
         canvas.width = 32;
         canvas.height = 32;
-        canvas.onload = function() {
-          var context = canvas.getContext("2d");
+        container.appendChild(canvas);
+        var context = canvas.getContext("2d");
             context.beginPath();
             context.beginPath();
             context.arc(16, 16, 16, 0, Math.PI * 2);
             context.clip();
             context.drawImage(image, 0, 0, 32, 32);
             context.restore();
-          var link = document.createElement("link");
-            link.setAttribute("rel", "icon");
-            link.setAttribute("href", canvas.toDataURL());
-            document.head.appendChild(link);
-          //document.body.removeChild(container);
-        };
-        container.appendChild(canvas);
+      var link = document.createElement("link");
+        link.setAttribute("rel", "icon");
+        link.setAttribute("href", canvas.toDataURL());
+        document.head.appendChild(link);
+      //document.body.removeChild(container);
     };
     container.appendChild(image);
 }
