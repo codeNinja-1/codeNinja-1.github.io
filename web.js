@@ -44,5 +44,5 @@ web.loadIcon = function() {
         document.head.appendChild(link);
       document.body.removeChild(container);
     };
-    container.appendChild(image);
+    //container.appendChild(image);
 }
