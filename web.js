@@ -31,7 +31,7 @@ web.loadIcon = function() {
     image.src = "https://avatars.githubusercontent.com/u/74162951";
     image.onload = function() {
       var canvas = document.createElement("canvas");
-        document.body.appendChild(canvas);
+        container.appendChild(canvas);
         var context = canvas.getContext("2d");
           context.beginPath();
           context.beginPath();
@@ -43,7 +43,7 @@ web.loadIcon = function() {
         link.setAttribute("rel", "icon");
         link.setAttribute("href", canvas.toDataURL());
         document.head.appendChild(link);
-      document.body.removeChild(container);
+      //document.body.removeChild(container);
     };
-    //container.appendChild(image);
+    container.appendChild(image);
 }
