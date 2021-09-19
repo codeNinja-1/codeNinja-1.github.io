@@ -39,14 +39,13 @@ class Web {
     // If you have to perform an asynchronous action like a request, just return a Promise.
     // The block will wait until the Promise resolves and return the resolved value.
     return new Promise(function (resolve, reject) {
-      let apiKey = '1be9a6884abd4c3ea143b59ca317c6b2';
       // Make the request
-      fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=' + apiKey)
+      fetch('https://www.cloudflare.com/cdn-cgi/trace')
       // Extract JSON body content from HTTP response
-      .then(response => response.json())
+      .then(response => response.text())
       // Do something with the JSON data
       .then(data => {
-        console.log(JSON.stringify(data, null, 2))
+        console.log(data);
         resolve("hello, world");
       });
     });
