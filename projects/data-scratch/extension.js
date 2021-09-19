@@ -31,7 +31,7 @@ class Data {
           }
         },
         {
-          opcode: 'json',
+          opcode: 'jsonNumber',
           blockType: Scratch.BlockType.REPORTER,
           text: 'number [ONE]',
           arguments: {
@@ -42,7 +42,7 @@ class Data {
           }
         },
         {
-          opcode: 'json',
+          opcode: 'jsonBoolean',
           blockType: Scratch.BlockType.REPORTER,
           text: 'boolean [ONE]',
           arguments: {
@@ -53,7 +53,7 @@ class Data {
           }
         },
         {
-          opcode: 'json',
+          opcode: 'jsonString',
           blockType: Scratch.BlockType.REPORTER,
           text: 'string [ONE]',
           arguments: {
@@ -69,7 +69,13 @@ class Data {
   itemOf(args) {
     return JSON.stringify(JSON.parse(args.TWO)[args.ONE]);
   }
-  json(args) {
+  number(args) {
+    return JSON.stringify(args.ONE);
+  }
+  boolean(args) {
+    return JSON.stringify(args.ONE);
+  }
+  string(args) {
     return JSON.stringify(args.ONE);
   }
   value(args) {
