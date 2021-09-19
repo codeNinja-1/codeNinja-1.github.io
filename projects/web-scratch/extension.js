@@ -32,6 +32,7 @@ class Web {
         let value = pair.slice(index + 1, pair.length);
         result[key] = value;
       }
+      delete result[""];
       return result;
     }
   }
