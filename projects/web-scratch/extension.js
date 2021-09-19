@@ -8,6 +8,17 @@ class Web {
           opcode: 'ipAddress',
           blockType: Scratch.BlockType.REPORTER,
           text: 'ip address'
+        },
+        {
+          opcode: 'fetch',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'fetch [ONE]',
+          arguments: {
+            ONE:{
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: "url"
+            }
+          }
         }
       ]
     };
@@ -17,9 +28,7 @@ class Web {
       fetch('https://www.cloudflare.com/cdn-cgi/trace')
       .then(response => response.text())
       .then(function(data) {
-        console.log(data);
         data = parseData(data);
-        console.log(data);
         resolve(data.ip);
       });
     });
@@ -35,6 +44,15 @@ class Web {
       delete result[""];
       return result;
     }
+  }
+  fetch(args) {
+    return new Promise(function (resolve, reject) {
+      fetch(args.ONE)
+      .then(response => response.text())
+      .then(function(data) {
+        resolve(data);
+      });
+    });
   }
 }
 
