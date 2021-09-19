@@ -41,6 +41,7 @@ class Web {
     return new Promise(function (resolve, reject) {
       fetch('https://www.cloudflare.com/cdn-cgi/trace')
       .then(function (response) {
+        console.log(response);
         return response.text();
       })
       .then(function (data) {
