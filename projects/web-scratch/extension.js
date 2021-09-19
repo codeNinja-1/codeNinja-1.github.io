@@ -44,6 +44,7 @@ class Web {
         console.log(response);
         console.log(response.text());
         response.text().then(function (data) {
+          console.log(data);
           resolve(data.trim().split('\n').reduce(function(obj, pair) {
             pair = pair.split('=');
             var value = (obj[pair[0]] = pair[1], obj);
