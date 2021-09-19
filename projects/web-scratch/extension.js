@@ -47,11 +47,15 @@ class Web {
   }
   fetch(args) {
     return new Promise(function (resolve, reject) {
-      fetch(args.ONE)
-      .then(response => response.text())
-      .then(function(data) {
-        resolve(data);
-      });
+      try {
+        fetch(args.ONE)
+        .then(response => response.text())
+        .then(function(data) {
+          resolve(data);
+        });
+      } catch (error) {
+        resolve(error.toString());
+      }
     });
   }
 }
