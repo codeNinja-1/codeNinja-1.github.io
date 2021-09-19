@@ -43,16 +43,15 @@ class Web {
       .then(function (response) {
         console.log(response);
         console.log(response.text());
-        return response.text();
+        response.text().then(function (data) {
+          resolve(data.trim().split('\n').reduce(function(obj, pair) {
+            pair = pair.split('=');
+            var value = (obj[pair[0]] = pair[1], obj);
+            console.log(value);
+            return value;
+          }, {}));
+        });
       })
-      .then(function (data) {
-        resolve(data.trim().split('\n').reduce(function(obj, pair) {
-          pair = pair.split('=');
-          var value = (obj[pair[0]] = pair[1], obj);
-          console.log(value);
-          return value;
-        }, {}));
-      });
     });
   }
 }
